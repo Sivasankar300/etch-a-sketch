@@ -1,0 +1,13 @@
+.divs {
+  flex-wrap: wrap;
+  width: 51px;
+  height: 51px;
+  display: flex;
+  flex: auto;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
