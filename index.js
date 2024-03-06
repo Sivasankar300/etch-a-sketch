@@ -7,6 +7,7 @@ for (i = 0; i < 255; i++) {
 }
 
 const divList = document.querySelectorAll(".divs");
+const button = document.querySelector('#btn');
 
 divList.forEach((divs) => {
  
@@ -14,3 +15,12 @@ divs.addEventListener("mouseenter", () => {
   console.log("yay");
   divs.classList.add("black");
 }); });
+
+const divs = document.querySelector('divs');
+
+
+button.addEventListener('click', () => {
+    while(container.hasChildNodes()) {
+     const deletedDivs = container.removeChild(container.firstChild);
+    }
+});

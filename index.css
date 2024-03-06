@@ -1,18 +1,23 @@
 .divs {
-  flex-wrap: wrap;
   width: 51px;
   height: 51px;
-  display: flex;
-  flex: auto;
   background-color: gray;
 }
 
 #container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 3px;
+  width: 960px;
+  height: 450 px;
+  margin:auto;
+  
 }
 
 .black{
   background-color: black;
+}
+
+body{
+  display:flex;
 }
