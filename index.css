@@ -1,13 +1,10 @@
 .divs {
   display: flex;
   background-color: gray;
-  flex: 1 1 auto;
-  min-height: 10px;
-  min-width: 10px;
-  max-height: 150px;
+  flex:auto;
+  
+  min-width: 30px;
 
-  border: 0px;
-  margin: 0px;
 }
 
 #container {
