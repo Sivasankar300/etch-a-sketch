@@ -7,6 +7,7 @@ for (let i = 0; i < 255; i++) {
 }
 
 const button = document.querySelector("#btn");
+const divs = document.querySelector('divs');
 
 // Adding the "black" class to a div when being hovered by a mouse
 
@@ -14,7 +15,9 @@ function hoverEffect() {
   const divList = document.querySelectorAll(".divs");
   divList.forEach((divs) => {
     divs.addEventListener("mouseenter", () => {
-      divs.classList.add("black");
+      let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+      divs.style.backgroundColor=randomColor;
+      console.log(randomColor);
     });
   });
 }
@@ -26,7 +29,6 @@ button.addEventListener("click", () => {
 
   // Making sure that the user can't input above 100 per side to avoid the browser from crashing or lagging hard
 
-  if (userInput)
     if (userInput <= 100) {
       while (container.hasChildNodes()) {
         container.removeChild(container.firstChild);
