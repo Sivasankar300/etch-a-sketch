@@ -17,7 +17,6 @@ function hoverEffect() {
     divs.addEventListener("mouseenter", () => {
       let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
       divs.style.backgroundColor=randomColor;
-      console.log(randomColor);
     });
   });
 }
